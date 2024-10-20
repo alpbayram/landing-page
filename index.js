@@ -2,7 +2,7 @@ var form = document.querySelector('.pageclip-form')
 Pageclip.form(form, {
   onSubmit: function (event) { },
   onResponse: function (error, response) { },
-  successTemplate: '<span>Thank you!</span>'
+  successTemplate: '<div style="background-color: #f0f0f0; color: #333; padding: 20px; font-size: calc(1rem + 0.4vw); text-align: center;">Teşekkür ederim. Form başarıyla gönderildi.</div>'
 })
 const projectLink=document.querySelector(".project-link")
 const cvLink=document.querySelector(".cv-link")
