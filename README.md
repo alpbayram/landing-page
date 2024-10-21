@@ -13,7 +13,7 @@ Bu proje, [The Odin Project](https://www.theodinproject.com/) kapsamındaki HTML
 
 ## Demo
 
-Projenin canlı demosu için [buraya tıklayın](https://alpbayram.github.io/odin-landing-page/).
+Projenin canlı demosu için [buraya tıklayın](https://alpbayram.me/).
 
 
 ## Özellikler
