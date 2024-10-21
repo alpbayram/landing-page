@@ -336,7 +336,7 @@ main {
     font-weight: 200;
     border: black 1px solid;
     justify-content: start;
-    font-size: calc(0.9rem + 0.45vw);
+    font-size: clamp(1em, 1.5vw, 3em);
     border-radius: 1vw;
     padding-left: 0.5vw;
 }
@@ -348,7 +348,7 @@ main {
     align-items: start;
     justify-content: start;
     align-content: start;
-    font-size: calc(0.6rem + 0.45vw);
+    font-size: clamp(1em, 1.5vw, 3em);
 }
 .form-button{
     background-color: #3882f6;
