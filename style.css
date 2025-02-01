@@ -16,6 +16,7 @@ ul {
 	list-style-type: none;
 	gap: 24px;
 	flex-wrap: wrap;
+	justify-content: space-evenly;
 	/* overflow:auto; */
 }
 
@@ -46,7 +47,7 @@ ul {
 	top: 0px;
 	z-index: 1000;
 }
-@media (max-width: 1178px) {
+@media (max-width: 1600px) {
 	.header-bar {
 		justify-content: center;
 	}
@@ -260,7 +261,7 @@ main {
 }
 .main-section-3 {
 	align-items: center;
-	scroll-margin-top: -8em;
+	scroll-margin-top: 0;
     background-color: #16182d;
 }
 .cta-container {
@@ -369,6 +370,15 @@ main {
 	padding-bottom: clamp(1rem, 1.667vw, 2rem);
 }
 @media (max-width: 848px) {
+	.cta-container{
+		flex-basis: 60%
+	}
+	.cta-content-text-1{
+		font-size: 4vw;
+	}
+	.form-buton{
+		width: 100%;
+	}
 	.header-hero {
 		justify-content: center;
 		align-items: center;
@@ -415,7 +425,11 @@ main {
 }
 
 @media (max-width: 691px) {
+	.cta-container{
+		flex-basis: 70%
+	}
 	.boxes .box {
 		flex-basis: calc(100%);
 	}
 }
+/* ThanksPage */
