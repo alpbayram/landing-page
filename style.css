@@ -1,15 +1,10 @@
 :root {
-	--shadow-color: 213deg 44% 48%;
-	--shadow-elevation-high: -0.2px 0.1px 0.3px hsl(var(--shadow-color) / 0.27),
-		-1.1px 0.5px 1.4px -0.3px hsl(var(--shadow-color) / 0.27),
-		-2px 0.9px 2.5px -0.6px hsl(var(--shadow-color) / 0.27),
-		-3px 1.4px 3.7px -0.8px hsl(var(--shadow-color) / 0.27),
-		-4.4px 2.1px 5.5px -1.1px hsl(var(--shadow-color) / 0.27),
-		-6.4px 3px 8px -1.4px hsl(var(--shadow-color) / 0.27),
-		-9px 4.2px 11.2px -1.7px hsl(var(--shadow-color) / 0.27),
-		-12.7px 5.9px 15.8px -1.9px hsl(var(--shadow-color) / 0.27),
-		-17.4px 8.1px 21.6px -2.2px hsl(var(--shadow-color) / 0.27),
-		-23.5px 10.9px 29.1px -2.5px hsl(var(--shadow-color) / 0.27);
+	--shadow-color: 0deg 0% 0%;
+	--shadow-elevation-medium:
+    -0.5px 0.5px 0.7px hsl(var(--shadow-color) / 0.2),
+    -1.7px 1.8px 2.5px -1px hsl(var(--shadow-color) / 0.18),
+    -4.8px 5px 7.1px -2.1px hsl(var(--shadow-color) / 0.16),
+    -12.6px 13.1px 18.7px -3.1px hsl(var(--shadow-color) / 0.14);
 }
 
 * {
@@ -18,7 +13,7 @@
 	margin: 0;
 	font-family: "Rubik", sans-serif;
 	line-height: 150%;
-	outline: 1.5px solid black;
+	/* outline: 1.5px solid black; */
 	/* border: 1.5px black solid; */
 }
 /* .header *{
@@ -219,6 +214,7 @@ main {
 .box-image {
 	display: flex;
 	flex-direction: column;
+	
 }
 .box-image img {
 	object-fit: contain;
@@ -227,6 +223,7 @@ main {
 	border-radius: 1rem;
 	border: 5px solid #0d1b2a;
 	background-color: #415a77;
+	box-shadow: var(--shadow-elevation-medium);
 }
 .box-header {
 	font-size: calc(1.2rem + 0.4vw);
@@ -270,18 +267,23 @@ main {
 }
 .hakkimda-paragraf{
 	height: 100%;
+	align-content: center;
 }
-.about-content.about div:nth-child(3) p{
-	width: 1.5em;
+.about-content.about div:nth-child(2) img{
+	width: 2.5em;
 }
+.about-content.about div:nth-child(3) img{
+	width: 3.5em;
+}
+
 .float-left {
 	float: left;
-
+	margin: auto;
 	width: 3em;
 	height: 100%;
-
+	margin: auto;
 	object-fit: contain;
-	margin-right: calc(0.1rem + 0.3vw);
+	
 }
 .about-content {
 	font-size: calc(0.9rem + 0.45vw);
@@ -292,8 +294,11 @@ main {
 	flex-basis: 400px;
 	flex-grow: 4;
 }
+.about-content.about div{
+	display: flex;
+}
 .about-content.about p {
-	align-self: flex-start;
+	width: 90%;
 }
 .main-section-3 {
 	align-items: center;
