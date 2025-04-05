@@ -1,10 +1,9 @@
 :root {
 	--shadow-color: 0deg 0% 0%;
-	--shadow-elevation-medium:
-    -0.5px 0.5px 0.7px hsl(var(--shadow-color) / 0.2),
-    -1.7px 1.8px 2.5px -1px hsl(var(--shadow-color) / 0.18),
-    -4.8px 5px 7.1px -2.1px hsl(var(--shadow-color) / 0.16),
-    -12.6px 13.1px 18.7px -3.1px hsl(var(--shadow-color) / 0.14);
+	--shadow-elevation-medium: -0.5px 0.5px 0.7px hsl(var(--shadow-color) / 0.2),
+		-1.7px 1.8px 2.5px -1px hsl(var(--shadow-color) / 0.18),
+		-4.8px 5px 7.1px -2.1px hsl(var(--shadow-color) / 0.16),
+		-12.6px 13.1px 18.7px -3.1px hsl(var(--shadow-color) / 0.14);
 }
 
 * {
@@ -167,7 +166,7 @@ main {
 	flex-direction: column;
 	display: flex;
 	align-items: center;
-	background-color: #e0e1dd;
+	background-color: #cbcfd5;
 	gap: 2em;
 }
 .boxes {
@@ -197,9 +196,13 @@ main {
 
 	flex: 1;
 	max-width: 90%;
-	margin-top: 2em;
+	margin-top: 1em;
 }
-
+.projects-section .box-content{
+	font-weight: normal;
+	text-align: justify;
+	font-size: calc(0.8rem + 0.2vw);
+}
 .boxes .box {
 	color: #1f2937;
 	font-weight: 400;
@@ -214,7 +217,6 @@ main {
 .box-image {
 	display: flex;
 	flex-direction: column;
-	
 }
 .box-image img {
 	object-fit: contain;
@@ -265,14 +267,14 @@ main {
 	width: 4em;
 	height: 4em;
 }
-.hakkimda-paragraf{
+.hakkimda-paragraf {
 	height: 100%;
 	align-content: center;
 }
-.about-content.about div:nth-child(2) img{
+.about-content.about div:nth-child(2) img {
 	width: 2.5em;
 }
-.about-content.about div:nth-child(3) img{
+.about-content.about div:nth-child(3) img {
 	width: 3.5em;
 }
 
@@ -283,7 +285,6 @@ main {
 	height: 100%;
 	margin: auto;
 	object-fit: contain;
-	
 }
 .about-content {
 	font-size: calc(0.9rem + 0.45vw);
@@ -294,7 +295,7 @@ main {
 	flex-basis: 400px;
 	flex-grow: 4;
 }
-.about-content.about div{
+.about-content.about div {
 	display: flex;
 }
 .about-content.about p {
@@ -309,7 +310,7 @@ main {
 	box-sizing: content-box;
 	display: flex;
 
-	flex-basis: 21%;
+	flex-basis: 30%;
 
 	height: 500px;
 	background-color: #1b263b;
@@ -324,7 +325,7 @@ main {
 .cta-content-text-1 {
 	display: flex;
 	font-size: calc(0.8rem + 0.5vw);
-
+	padding: 1rem;
 	height: 10%;
 	font-family: "Ubuntu", serif;
 	font-weight: bold;
@@ -335,6 +336,7 @@ main {
 	flex-direction: column;
 	height: 90%;
 	width: 100%;
+	padding: 1rem;
 }
 .form-section {
 	display: flex;
@@ -450,6 +452,37 @@ main {
 		min-width: unset;
 		flex-basis: 70%;
 	}
+}
+
+.projects-section.main-section-1.main-section {
+	background-color: #e0e1dd;
+}
+
+.box-image .projects {
+	width: 16em;
+	height: 24em;
+	object-fit: cover;
+}
+.box-4 .projects{
+	width: 24em;
+  height: 16em;
+}
+
+.links{
+	display: flex;
+	
+	width: 100%;
+	justify-content: center;
+	gap: 1em;
+	margin-top: 1em;
+}
+.link-icon{
+	height: fit-content;
+	object-fit: contain;
+	width: 2.5em;
+}
+.links a{
+	display: flex;
 }
 @media (max-width: 1526px) {
 	.boxes .box {
