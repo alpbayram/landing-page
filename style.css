@@ -169,7 +169,7 @@ main {
 	background-color: #cbcfd5;
 	gap: 2em;
 }
-#main-section-1{
+#main-section-1 {
 	scroll-margin-top: 90px;
 }
 .boxes {
@@ -201,7 +201,7 @@ main {
 	max-width: 90%;
 	margin-top: 1em;
 }
-.projects-section .box-content{
+.projects-section .box-content {
 	font-weight: normal;
 	text-align: justify;
 	font-size: calc(0.8rem + 0.2vw);
@@ -466,25 +466,30 @@ main {
 	height: 24em;
 	object-fit: cover;
 }
-.box-4 .projects{
+.box-4 .projects {
 	width: 24em;
-  height: 16em;
+	height: 16em;
 }
 
-.links{
+.links {
 	display: flex;
-	
+
 	width: 100%;
 	justify-content: center;
 	gap: 1em;
 	margin-top: 1em;
 }
-.link-icon{
-	height: fit-content;
-	object-fit: contain;
+.link-icon {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+	font-style: italic;
+	background-repeat: no-repeat;
+	background-size: cover;
+	shape-margin: 1rem;
 	width: 2.5em;
 }
-.links a{
+.links a {
 	display: flex;
 }
 @media (max-width: 1526px) {
