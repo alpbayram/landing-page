@@ -465,6 +465,7 @@ main {
 	width: 16em;
 	height: 24em;
 	object-fit: cover;
+	object-position: 25% 20%;
 }
 .box-4 .projects {
 	width: 24em;
