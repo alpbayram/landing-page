@@ -203,8 +203,11 @@ main {
 }
 .projects-section .box-content {
 	font-weight: normal;
-	text-align: justify;
+	text-align: center;
 	font-size: calc(0.8rem + 0.2vw);
+}
+.box-6 .projects{
+	object-position: left !important;
 }
 .boxes .box {
 	color: #1f2937;
